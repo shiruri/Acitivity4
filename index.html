@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jemmer Almoneda, Html, Css, Activity 4">
+    <meta name="author" content="Jemmer Almoneda 11-Dorcey">
+
+    <title>Activity 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("index-bg-bg.jpg");
+            background-size: cover;
+        }
+
+        .container {
+    background-image: url("index-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .card {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            margin-top: auto;
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);
+            width: 400px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        .card h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+        
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px 0;
+        }
+        
+        button:hover {
+            background-color: #006bb3;
+        }
+        
+        button:active {
+            background-color: #004080;
+        }
+        .bnts1, .bnts2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+ 
+        <div class="card">
+   
+                <h1>Jemmer Almoneda</h1>
+                <p>Passed to sir Daniel De Vera</p>
+                <br>
+                <span class="bnts1"><button id="foods">Food List Here!</button></span>
+                <!--So we display this for none for now until button is clicked js is cool what -->
+                <div id="FoodList" style="display:none;">
+                    <a href="dumpling.html" target="_self"><button>Dumpling🥟</button></a>       
+                    <a href="mochi.html" target="_self"><button>Mochi🍡</button></a>       
+                    <a href="tteokbokki.html" target="_self"><button>Tteokbokki🥘</button></a>               
+                </div>
+                <br>
+                <br>
+
+                <span class="bnts2"><button id="info">Info Here!</button></span>
+                <div id="Infos" style="display:none;">
+                  <h2>Date:November 7 2023</h2>
+                  <p>Jemmer almoneda 11-Dorcey Activity 4</p>
+                  <p>Technologies used: HTML,CSS,Pictures from pinterest,Description from wiki</p>           
+                </div>
+
+      
+         
+
+          
+        </div>
+    </div>
+    <!--Aight gonna learn basic javascript for this or maybe vaadin java-->
+    <script>
+        document.getElementById("foods").onclick = function() {
+            
+            const details = document.getElementById("FoodList");
+            
+            if (details.style.display === "none") {
+                details.style.display = "block";  
+            } else {
+                details.style.display = "none";  
+            }
+        };
+        document.getElementById("info").onclick = function() {
+            
+            const details = document.getElementById("Infos");
+            
+            if (details.style.display === "none") {
+                details.style.display = "block";  
+            } else {
+                details.style.display = "none";  
+            }
+        };
+    </script>
+<div class="goback">
+</div>
+
+=
+</body>
+</html>

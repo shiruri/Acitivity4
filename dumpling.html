@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Geist:wght@100..900&family=Micro+5&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jemmer almoneda,Html,Css,Activity 4">
+    <meta name="author" content="Jemmer Almoneda 11-Dorcey">
+    <style>
+        .micro-5-regular {
+            font-family: "Micro 5", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+        body {
+            background-image: url('dumpling-bg.jpg');
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: "Bona Nova SC", serif;
+            overflow-y: scroll;
+        }
+
+        .card {
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            width: 600px;
+            max-height: 90vh;  
+            overflow-y: auto;  
+            text-align: center;
+            max-height: auto;
+            height: 800px;
+        }
+
+        h1 {
+            font-family: "Bona Nova SC", serif;
+        }
+
+        img {
+            max-width: 350px;
+            max-height: 200px;
+            border-radius: 5px;
+     
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #fd4e4e;
+            cursor: pointer;
+        }
+
+        details {
+            border: 2px solid #f74a4a;
+            border-radius: 8px;
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);
+            padding: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #c70000;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #c70000;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #c70000;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+       nav {
+        position: sticky; /*this aint working bruh */
+        
+
+        padding-top: 10px;
+       }
+        
+        nav a {
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);             
+            text-decoration: none;              
+            font-weight: bold;                  
+            padding: 10px 15px;        
+            position: sticky;
+        
+            border-radius: 5px;                 
+            transition: background-color 0.3s;  
+        }
+        
+        nav a:hover {
+            background-color: rgba(172, 156, 172, 0.2); 
+        }
+        
+    </style>
+    <title>Dumpling</title>
+</head>
+<body>
+    <div class="card">
+        <h1>饺子Dumpling饺子</h1>
+        <br>
+        <h2>Country of Origin
+            <br><span>China🥟</span></h2>
+            <br>
+        <img src="dumpling.jpg" alt="Dumpling">
+        <br>
+        <details>
+            <summary>
+                History of Dumplings
+            </summary>
+            <p><b>Dumplings</b> are believed to have been invented over 1,800 years ago by Zhang Zhongjing, a Chinese healer, during the Eastern Han Dynasty. The story goes that Zhang created dumplings as a cure for frostbite. He filled small dough wrappers with a mixture of meat, herbs, and spices, which he then steamed or boiled and served to people suffering from the cold. Since then, dumplings have spread across China and beyond, with many countries adapting the dish to their culinary traditions. Dumplings can now be found in various forms worldwide, from Japanese gyoza to Italian ravioli, and are enjoyed by diverse cultures.</p>
+        </details>
+        <details>
+            <summary>Ingredients of Dumplings</summary>
+            <p>
+                <span class="section-title">For the dumpling dough:</span>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>3/4 cup warm water</li>    
+                </ul>
+                
+                <span class="section-title">For the filling:</span>
+                <ul>
+                    <li>1/2 pound ground pork or chicken</li>
+                    <li>1 cup chopped cabbage</li>
+                    <li>2 scallions, finely chopped</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>1 tablespoon grated ginger</li>
+                    <li>2 tablespoons soy sauce</li>
+                    <li>1 tablespoon sesame oil</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                
+                <span class="section-title">For cooking:</span>
+                <ul>
+                    <li>1 tablespoon vegetable oil (if pan-frying)</li>
+                    <li>Water (for steaming)</li>
+                </ul>
+            </p>
+        </details>
+        <details>
+            <summary>How to Cook Dumplings</summary>
+            <ol>
+                <li class="step-title">Prepare the Dough:</li>
+                <ul>
+                    <li>In a large bowl, combine the flour and salt.</li>
+                    <li>Gradually add warm water, stirring to form a dough.</li>
+                    <li>Knead the dough for about 5 minutes, until smooth and elastic. Cover and let it rest for 30 minutes.</li>
+                </ul>
+                
+                <li class="step-title">Make the Filling:</li>
+                <ul>
+                    <li>In a mixing bowl, combine ground meat, cabbage, scallions, garlic, ginger, soy sauce, and sesame oil.</li>
+                    <li>Season with salt and pepper, and mix until well combined.</li>
+                </ul>
+                
+                <li class="step-title">Form the Dumplings:</li>
+                <ul>
+                    <li>Divide the dough into small balls (about 1 inch in diameter).</li>
+                    <li>Roll each ball into a thin circle about 3 inches in diameter.</li>
+                    <li>Place a small spoonful of filling in the center of each dough circle.</li>
+                    <li>Fold the dough over the filling to create a half-moon shape and pinch the edges to seal tightly. You can pleat the edges for a traditional look.</li>
+                </ul>
+                
+                <li class="step-title">Cook the Dumplings (choose your preferred method):</li>
+                <ul>
+                    <li><strong>Boiling:</strong> Bring a pot of water to a boil. Add the dumplings in batches and cook until they float to the top and the filling is cooked through (about 5-7 minutes).</li>
+                    <li><strong>Steaming:</strong> Place dumplings in a steamer lined with parchment paper or cabbage leaves. Steam for about 10-12 minutes until the dumpling wrappers become translucent and the filling is cooked.</li>
+                    <li><strong>Pan-frying (for potstickers):</strong> Heat a tablespoon of oil in a skillet over medium heat. Place dumplings in the pan and cook until the bottoms are golden brown. Then, add a small amount of water to the pan (enough to create steam) and cover. Steam for 5-6 minutes until the water evaporates and the filling is cooked through.</li>
+                </ul>
+                
+                <li class="step-title">Serve:</li>
+                <ul>
+                    <li>Serve the dumplings hot with a dipping sauce of soy sauce, rice vinegar, and chili oil (optional). Enjoy your delicious homemade dumplings!</li>
+                </ul>
+            </ol>
+        </details>
+        <nav>
+            <a href="index.html">Home Page</a>
+            </nav>
+      
+    </div>
+</body>
+</html>

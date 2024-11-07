@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Geist:wght@100..900&family=Micro+5&family=Nanum+Gothic+Coding&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jemmer almoneda,Html,Css,Activity 4">
+    <meta name="author" content="Jemmer Almoneda 11-Dorcey">
+    <style>
+        .micro-5-regular {
+            font-family: "Micro 5", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+        body {
+            background-size:auto;     
+
+            background-image: url('mochi-bg.jpg');
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: "Nanum Gothic Coding", monospace;
+            overflow-y: scroll;
+            object-fit: cover;
+        }
+
+        .card {
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            width: 600px;
+            max-height: 90vh;  
+            overflow-y: auto;  
+            text-align: center;
+            max-height: auto;
+            height: 850px;
+        }
+
+        h1 {
+            font-family: "Nanum Gothic Coding", monospace;
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 250px;
+            border-radius: 5px;
+     
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #b10a66;
+            cursor: pointer;
+        }
+
+        details {
+            border: 2px solid #d616bd;
+            border-radius: 8px;
+            backdrop-filter: blur(9px) saturate(180%);
+            -webkit-backdrop-filter: blur(9px) saturate(180%);
+            background-color: rgba(209, 209, 219, 0.38);
+            padding: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #b8067c;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #fc16a4;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #a71056;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        nav {
+            position: sticky; /*this aint working bruh */
+            
+    
+            padding-top: 10px;
+           }
+            
+            nav a {
+                backdrop-filter: blur(9px) saturate(180%);
+                -webkit-backdrop-filter: blur(9px) saturate(180%);
+                background-color: rgba(209, 209, 219, 0.38);             
+                text-decoration: none;              
+                font-weight: bold;                  
+                padding: 10px 15px;        
+                position: sticky;
+            
+                border-radius: 5px;                 
+                transition: background-color 0.3s;  
+            }
+            
+            nav a:hover {
+                background-color: rgba(172, 156, 172, 0.2); 
+            }
+            
+    </style>
+    <title>Mochi</title>
+</head>
+<body>
+    <div class="card">
+        <h1>餅Mochi餅</h1>
+        <br>
+        <h2>Country of Origin
+            <br><span>Japan🍡</span></h2>
+            <br>
+        <img src="moachi.jpg" alt="Mochi">
+        <br>
+        <details>
+            <summary>
+                History of Mochi
+            </summary>
+            <p><b>Mochi</b> has a long history in Japan, dating back over a thousand years. It has been a traditional food during the Japanese New Year and is often used in various ceremonies, symbolizing good luck and prosperity. The earliest forms of mochi were made from steamed glutinous rice, which was pounded into a sticky dough. Over time, it became popular as a snack and dessert, with variations developed in different regions of Japan.</p>
+        </details>
+        <details>
+            <summary>Ingredients of Mochi</summary>
+            <li>Water</li>
+            <li>Cornstarch or potato starch (for dusting to prevent sticking)</li>
+            <li>Sugar (optional, for sweetness)</li>
+            <li>Glutinous rice (also called sticky rice or mochiko, which is rice flour made from glutinous rice)</li>
+        </details>
+        <details>
+            <summary>How to Cook Mochi</summary>
+            <ol>
+                <li>Prepare the glutinous rice: Soak glutinous rice in water for about 8 hours or overnight.</li>
+                <li>Steam the rice: Drain the rice and steam it for about 45 minutes to an hour, until the rice becomes very soft and sticky.</li>
+                <li>Pound the rice: Traditionally, mochi is made by pounding the steamed rice with a pestle in a large mortar (usu), turning it into a sticky, dough-like consistency. If you don’t have a traditional mortar, you can use a food processor or stand mixer to help knead the rice until smooth and elastic.</li>    
+                <li>Shape the mochi: Once the rice dough is ready, divide it into small pieces and shape them into balls or discs. You can also fill them with fillings like sweet red bean paste (anko) or fruit if desired.</li>       
+                <li>Dust with starch: Dust the finished mochi with cornstarch or potato starch to prevent sticking.</li>
+            </ol>
+        </details>
+        <nav>
+            <a href="index.html">Home Page</a>
+            </nav>
+    </div>
+</body>
+</html>
